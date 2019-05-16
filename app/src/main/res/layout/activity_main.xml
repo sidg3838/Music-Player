@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/music">
+
+    <SeekBar
+        android:id="@+id/sb"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/stop"
+        android:layout_marginStart="42dp"
+        android:onClick="play"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginTop="209dp"
+        android:onClick="stop"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/rewind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/play"
+        android:layout_marginBottom="153dp"
+        android:onClick="rewind"
+        android:text="Rewind" />
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/stop"
+        android:layout_alignTop="@+id/rewind"
+        android:onClick="forward"
+        android:text="Forward" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rewind"
+        android:layout_centerHorizontal="true"
+        android:onClick="pause"
+        android:text="Pause" />
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="69dp"
+        android:layout_marginStart="49dp"
+        android:background="@color/colorPrimary"
+        android:text="PREVIOUS"
+        android:onClick="prev"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/stop"
+        android:layout_alignTop="@+id/previous"
+        android:text="NEXT"
+        android:background="@color/colorPrimary"
+        android:onClick="next"/>
+
+    <Button
+        android:id="@+id/viewlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rewind"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-153dp"
+        android:text="VIEW LIST"
+        android:onClick="vl"/>
+</RelativeLayout>
